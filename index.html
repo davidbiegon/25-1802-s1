@@ -3,7 +3,6 @@
 <head>
     <title>My Website</title>
 
-    <!-- Internal CSS -->
     <style>
         body {
             font-family: Arial;
@@ -11,7 +10,6 @@
             text-align: center;
         }
 
-        /* Navigation bar */
         nav {
             background-color: #333;
             padding: 15px;
@@ -28,7 +26,6 @@
             color: yellow;
         }
 
-        /* Search bar */
         .search-box {
             margin: 15px;
         }
@@ -42,7 +39,6 @@
             padding: 8px;
         }
 
-        /* Sections */
         section {
             padding: 40px;
         }
@@ -51,6 +47,27 @@
         #about { background-color: lightgreen; }
         #contacts { background-color: lightyellow; }
         #emergency { background-color: lightcoral; }
+
+        img {
+            width: 150px;
+            margin: 10px;
+        }
+
+        video {
+            width: 300px;
+            margin: 10px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -70,27 +87,64 @@
     <button>Search</button>
 </div>
 
-<!-- Sections -->
+<!-- MAIN CONTENT -->
+<section>
 
-<section id="home">
-    <h1>Home</h1>
-    <p>Welcome to the homepage.</p>
-</section>
+    <!-- Heading -->
+    <h1>Welcome to My Website</h1>
 
-<section id="about">
-    <h1>About</h1>
-    <p>This page explains the website.</p>
-</section>
+    <!-- Paragraph -->
+    <p>This is a simple website showing images, videos, and tables.</p>
 
-<section id="contacts">
-    <h1>Contacts</h1>
-    <p>Email: example@email.com</p>
-    <p>Phone: +254XXXXXXXXX</p>
-</section>
+    <!-- Images -->
+    <h2>Images</h2>
+    <img src="images/img1.jpg" alt="Image 1">
+    <img src="images/img2.jpg" alt="Image 2">
+    <img src="images/img3.jpg" alt="Image 3">
 
-<section id="emergency">
-    <h1>Emergency</h1>
-    <p>Call: 999 or 112</p>
+    <!-- Videos -->
+    <h2>Videos</h2>
+    <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Tables -->
+    <h2>Table 1</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <h2>Table 2</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>B</td>
+        </tr>
+    </table>
+
 </section>
 
 </body>
