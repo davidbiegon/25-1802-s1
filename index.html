@@ -1,134 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Website</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            text-align: center;
-        }
-
-        /* Heading */
-        .main-heading {
-            color: darkblue;
-            font-size: 36px;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: light-brown;
-            padding: 15px;
-        }
-
-        nav a {
-            color: black;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        /* Search */
-        .search-box {
-            margin: 15px;
-        }
-
-        input[type="text"] {
-            padding: 8px;
-            width: 200px;
-        }
-
-        button {
-            padding: 8px;
-        }
-
-        /* Sections */
-        section {
-            padding: 40px;
-        }
-
-        #home { background-color: lightblue; }
-        #about { background-color: lightgreen; }
-        #contacts { background-color: lightyellow; }
-        #emergency { background-color: lightcoral; }
-
-        /* Paragraph styling */
-        p {
-            color:black;
-            font-family: 38-lineart;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* Subheadings */
-        h2 {
-            color: brown;
-            text-decoration: underline;
-        }
-
-        /* Images */
-        img {
-            width: 150px;
-            margin: 10px;
-        }
-
-        /* Videos grid */
-        .video-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
-        }
-
-        .video-container iframe {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-        }
-
-        /* Tables */
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 60%;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-            padding: 10px;
-        }
-    </style>
-</head>
-
-<body>
-
-<!-- Main Heading -->
-<h1 class="main-heading">DAUDIS SUIT COLLECTION</h1>
-
-<!-- Navigation -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contacts">Contacts</a>
-    <a href="#emergency">Emergency</a>
-</nav>
-
-<!-- Search Bar -->
-<div class="search-box">
-    <input type="text" placeholder="Search here...">
-    <button>Search</button>
-</div>
-
 <!-- Home Section -->
 <section id="home">
     <h2>Home</h2>
-    <p>A suit store advert highlights a business that offers high-quality, stylish, and affordable suits for different occasions such as weddings, business, and formal events. We emphasize on legance, perfect fitting, and a wide variety of designs for men (and sometimes women).</p>
+    <p>A suit store advert highlights a business that offers high-quality, stylish, and affordable suits for different occasions such as weddings, business, and formal events.</p>
 
     <h2>Images</h2>
     <img src="images/img1.jpg">
@@ -140,33 +13,14 @@
 
     <h2>Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/3kwcFntg16asRHpK" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/Bg1r-djTpRZIwQhY" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/KEt0YbieF-ibBUsH" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/F8jDZTOp_r_Hd3Hj" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about">
-    <h2>About</h2>
-    <p>This website demonstrates HTML structure, CSS styling, images, videos, and tables.</p>
-</section>
-
-<!-- Contacts Section -->
-<section id="contacts">
-    <h2>Contacts</h2>
-    <p>Email: daudi@email.com</p>
-    <p>Phone: +254XXXXXXXXX</p>
-</section>
-
-<!-- Emergency Section -->
-<section id="emergency">
-    <h2>Emergency</h2>
-    <p>Call: 999 or 112</p>
-</section>
-
-<!-- Tables -->
+<!-- Tables (NOW ABOVE ABOUT & CONTACT) -->
 <section>
     <h2>Table 1</h2>
     <table>
@@ -192,7 +46,7 @@
         </tr>
         <tr>
             <td>LARGE</td>
-            <td>40-42</td>/td>
+            <td>40-42</td>
         </tr>
         <tr>
             <td>X-tra Large</td>
@@ -201,5 +55,21 @@
     </table>
 </section>
 
-</body>
-</html>
+<!-- About (moved to bottom) -->
+<section id="about">
+    <h2>About</h2>
+    <p>This website demonstrates HTML structure, CSS styling, images, videos, and tables.</p>
+</section>
+
+<!-- Contacts (moved to bottom) -->
+<section id="contacts">
+    <h2>Contacts</h2>
+    <p>Email: daudi@email.com</p>
+    <p>Phone: +254XXXXXXXXX</p>
+</section>
+
+<!-- Emergency stays last -->
+<section id="emergency">
+    <h2>Emergency</h2>
+    <p>Call: 999 or 112</p>
+</section>
