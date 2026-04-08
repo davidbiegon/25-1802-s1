@@ -5,18 +5,27 @@
 
     <style>
         body {
-            font-family: 38-lineart;
+            font-family: Arial;
             margin: 0;
             text-align: center;
         }
 
+        /* Heading */
+        .main-heading {
+            color: darkblue;
+            font-size: 36px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
         nav {
-            background-color: black;
+            background-color: #333;
             padding: 15px;
         }
 
         nav a {
-            color: cream;
+            color: white;
             margin: 15px;
             text-decoration: none;
             font-weight: bold;
@@ -26,6 +35,7 @@
             color: yellow;
         }
 
+        /* Search */
         .search-box {
             margin: 15px;
         }
@@ -39,6 +49,7 @@
             padding: 8px;
         }
 
+        /* Sections */
         section {
             padding: 40px;
         }
@@ -48,16 +59,39 @@
         #contacts { background-color: lightyellow; }
         #emergency { background-color: lightcoral; }
 
-        img {
-            width: 500px;
-            margin: 40px;
+        /* Paragraph styling */
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
-        video {
-            width: 300px;
+        /* Subheadings */
+        h2 {
+            color: darkgreen;
+            text-decoration: underline;
+        }
+
+        /* Images */
+        img {
+            width: 150px;
             margin: 10px;
         }
 
+        /* Videos grid */
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        /* Tables */
         table {
             margin: 20px auto;
             border-collapse: collapse;
@@ -73,6 +107,9 @@
 
 <body>
 
+<!-- Main Heading -->
+<h1 class="main-heading">My Website</h1>
+
 <!-- Navigation -->
 <nav>
     <a href="#home">Home</a>
@@ -87,66 +124,76 @@
     <button>Search</button>
 </div>
 
-<!-- MAIN CONTENT -->
-<section>
+<!-- Home Section -->
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to the homepage of this website.</p>
 
-    <!-- Heading -->
-    <h1>DAUDIS SUITES</h1>
-
-    <!-- Paragraph -->
-    <p>More than a clothing store, a business that offers high-quality, stylish, and affordable suits for different occasions such as weddings, business, and formal events. We emphasizes elegance, perfect fitting, and a wide variety of designs for men (and sometimes women). 
-
-    <!-- Images -->
     <h2>Images</h2>
-    <img src="images/img1.jpg" alt="Image 1">
-    <img src="images/img2.jpg" alt="Image 2">
-    <img src="images/img3.jpg" alt="Image 3">
+    <img src="images/img1.jpg">
+    <img src="images/img2.jpg">
+    <img src="images/img3.jpg">
 
-    <!-- Videos -->
     <h2>Videos</h2>
-<div class="video-container">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    </div>
+</section>
 
-    <iframe src="https://youtu.be/XcEmqKLCQZE?si=g7KV8Zcfwv0e1Sng" allowfullscreen></iframe>
+<!-- About Section -->
+<section id="about">
+    <h2>About</h2>
+    <p>This website demonstrates HTML structure, CSS styling, images, videos, and tables.</p>
+</section>
 
-    <iframe src="https://youtu.be/qVbeGM6vdQo?si=DhYSAJOc3Zdco_9L" allowfullscreen></iframe>
+<!-- Contacts Section -->
+<section id="contacts">
+    <h2>Contacts</h2>
+    <p>Email: example@email.com</p>
+    <p>Phone: +254XXXXXXXXX</p>
+</section>
 
-    <iframe src="https://youtu.be/VQ2qd71JAqw?si=3kwcFntg16asRHpK" allowfullscreen></iframe>
+<!-- Emergency Section -->
+<section id="emergency">
+    <h2>Emergency</h2>
+    <p>Call: 999 or 112</p>
+</section>
 
-</div>
-
-    <!-- Tables -->
+<!-- Tables -->
+<section>
     <h2>Table 1</h2>
     <table>
         <tr>
-            <th>Size</th>
-            <th>Chest sizr</th>
+            <th>Name</th>
+            <th>Age</th>
         </tr>
         <tr>
-            <td>XS</td>
-            <td>34-36</td>
+            <td>John</td>
+            <td>20</td>
         </tr>
         <tr>
-            <td>S</td>
-            <td>36-38</td>
+            <td>Mary</td>
+            <td>22</td>
         </tr>
     </table>
 
     <h2>Table 2</h2>
     <table>
         <tr>
-            <th>SIZE</th>
-            <th>CHEST SIZE</th>
+            <th>Course</th>
+            <th>Grade</th>
         </tr>
         <tr>
-            <td>M</td>
-            <td>38-40</td>
+            <td>HTML</td>
+            <td>A</td>
         </tr>
         <tr>
-            <td>L</td>
-            <td>40-42</td>
+            <td>CSS</td>
+            <td>B</td>
         </tr>
     </table>
-
 </section>
 
 </body>
